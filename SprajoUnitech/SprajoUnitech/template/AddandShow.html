@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <title>Product ADD and show</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="static/css/Home.css">
+		<link rel="stylesheet" href="static/w3css/w3.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="static/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="static/js/jquery.min.js"></script>
+		<script src="static/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<style>
+.gallery {
+    border: 1px solid white;
+
+}
+
+.gallery:hover {
+    border:1px solid red;
+}
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+
+ .zoom {
+  padding: 50px;
+  transition: transform .2s;
+  width: 50px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+        <h2 style="background-color:pink;text-align:center">Add New Product</h2>
+        <form action="" method="post">
+            <!--{{ csrf_input }}-->
+        {% csrf_token %}
+            {{form.as_p}}
+  <div class="mb-3">
+    <label class="form-label">Name:</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Image:</label>
+     <input type="file" class="form-control" id="myFile" name="filename">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Description</label>
+    <input type="text" class="form-control" id="description">
+  </div>
+  <div class="mb-3 form-check">
+    <label class="form-label">Capacity</label>
+      <input type="number" class="form-control" name="capacity">
+            <select id="unit" name="capacity">
+                <option value="water cooler"></option>
+                <option value="chiller">Ton</option>
+                <option value="panel AC">Watt</option>
+				</select>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Price</label>
+    <input type="number" class="form-control" id="price">
+  </div><br>
+  <a href="/displayproduct" ><button type="submit" class="btn btn-primary">Add</button></a>
+</form>
+</div>
+</body>
+</html>

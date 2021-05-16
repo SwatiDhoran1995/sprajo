@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="static/css/Home.css">
+		<link rel="stylesheet" href="static/w3css/w3.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="static/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="static/js/jquery.min.js"></script>
+		<script src="static/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+.gallery {
+    border: 1px solid white;
+
+}
+
+.gallery:hover {
+    border:1px solid red;
+}
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+
+ .zoom {
+  padding: 50px;
+  transition: transform .2s;
+  width: 50px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+</style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+<div>
+		<div class="row">
+		    <div class="col-sm-3 w3-center">
+				 <img src="static/img/logo.jpg" width="50%">
+			</div>
+            <div class="col-sm-9 w3-left">
+				 <img src="static/img/SprajoName.jpg" width="68%" style="padding-top:18px; padding-left:15px;">
+				<a href="admin"><button class=" btn btn-primary btn-sm glyphicon glyphicon-user" type="button" style="position: relative;left: 150px;top: 50px;">Login</button></a>
+			</div>
+
+        </div>
+
+	<br>
+
+	<div id="navbar">
+		<nav class="navbar navbar-inverse sticky-nav" data-spy="affix" data-offset-top="150" style="margin-bottom:0px">
+
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		<a class="navbar-brand tabs" href="#" style="color:white;padding:18px;font-size:18px;">MENU</a>
+		</div>
+
+		<div class="collapse navbar-collapse menu" id="myNavbar" style="height:1px;">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="tabs active"><a href="Home.html" style="color:white; padding:18px;font-size:18px;background-color:#B7ECFF;">
+				<span class="glyphicon glyphicon-home"></span></a></li>
+				<li class="tabs"><a href="#" style="color:white;padding:18px;font-size:18px;">PRODUCTS</a></li>
+				<li class="tabs"><a href="/services" style="color:white;padding:18px;font-size:18px;">SERVICES</a></li>
+				<li class="tabs"><a href="aboutus.html" style="color:white;padding:18px;font-size:18px;">ABOUT US</a></li>
+				<li class="tabs"><a href="CONTACTUS.html" style="color:white;padding:18px;font-size:18px" >CONTACT US</a></li>
+			</ul>
+
+		</div>
+
+		</nav>
+		</div>
+
+
+
+<div class="wrap" >
+<div class="container" style="">
+<div style="sagar">
+	<h3 style="font-weight:bold;" class="w3-center">Welcome To Sprajo Unitech</h3>
+		<p class="sagar">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>SPRAJO UNITECH </b> is situated in Moshi Pune Maharastra. and it was established solely, keeping in mind the necessity of Industrial, Farmer, Dairy, Safety Applications. Capitalizing on advanced technology, design engineering & vast expertise we are able to plan, integrate and manage to fulfill all requirements. <b>SPRAJO UNITECH </b>is now a leading Trader, Manufacturer and service provider of Cold Storage, Ripening chambers, Blast freezers, Industrial products , chiller, Panel AC and All kind of safety products.  Our state of the art equipped with the latest technology & machinery along with all technical support and service backup. Our workers are one of the most skilled laborers & there proficiency in Service & manufacturing all our products. The company follows strict quality control methods to deliver one of the best end products to our esteemed customers..</p>
+
+		<p class="sagar" style="color:#cc0000;"><b>Our design and development expertise includes:</b> </p>
+		<ul class="sagar" style="color:#0000ff;">
+			<li><b>High Performance, High Superiority</b></li>
+			<li><b>Quality , Comfort & Harmony of mind</b></li>
+			<li><b>We make life safe & secure.</b></li>
+			<li><b>We serve our customers right</b></li>
+		</ul>
+
+</div><br>
+		<div style="sagar">
+		<h3 style="margin-top:0px;margin:0px;font-weight:bold;"><b>Our Products</b></h3><br>
+
+		<div class="container mt-5">
+			{% block content %} {{'test'}} {% endblock content %}
+		</div>
+
+	<div class="w3-row-padding w3-grayscale">
+		<div class="w3-col l3 m6 w3-margin-bottom w3-center gallery zoom">
+      <a href="Cooling.html"><img src="static/img/Room-cold-storage.jpg" alt="John" style="width:100%"></a>
+      <h4 class="">Cold Storage Plant</h4>
+
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom w3-center gallery zoom">
+     <a href="Cooling.html"> <img src="static/img/industrial-water-chiller.jpg" alt="John" style="width:60%" class=""></a>
+      <h4 class="">Water Chiller</h4>
+
+    </div>
+
+	<div class="w3-col l3 m6 w3-margin-bottom w3-center gallery zoom">
+      <a href="Cooling.html"><img src="static/img/hydraulic-oil-chiller.jpg" alt="John" style="width:110%"></a>
+      <h4 class="">Hydrolic Oil Chiller</h4>
+
+    </div>
+	<div class="w3-col l3 m6 w3-margin-bottom w3-center gallery zoom">
+     <a href="Cooling.html"> <img src="static/img/industrial-panel-ac.jpg" alt="John" style="width:65%"></a>
+      <h4 class="">Panel Air Conditioner</h4>
+    </div>
+	</div>
+
+		<div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom w3-center gallery zoom">
+      <a href="Cooling.html"><img src="static/img/Visi Cooler VC.jpeg" alt="John" style="width:70%"></a>
+      <h4 class="">VC Cooler</h4>
+
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom w3-center gallery zoom">
+     <a href="Cooling.html"> <img src="static/img/chest freezer.jpg" alt="John" style="width:70%"></a>
+      <h4 class="">Chest Freezer</h4>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom w3-center gallery zoom">
+      <a href="Machinary.html"> <img src="static/img/mist collector.jpg" alt="John" style="width:70%"></a>
+      <h4 class="">Mist Collector</h4>
+    </div>
+
+	<div class="w3-col l3 m6 w3-margin-bottom w3-center gallery zoom">
+     <a href="machinary.html"> <img src="static/img/mobile oil filtration.jpg" alt="John" style="width:70%"></a>
+      <h4 class="">Oil Filtration Mobile Unit</h4>
+    </div>
+	</div>
+
+
+		<div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom w3-center gallery zoom">
+      <a href="Machinary.html"><img src="static/img/refrigerator-stabilizer.jpg" alt="John" style="width:70%"></a>
+      <h4 class="">Stabilizer</h4>
+
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom w3-center gallery zoom">
+     <a href="Machinary.html"> <img src="static/img/oil-skimmer.jpg" alt="John" style="width:70%"></a>
+      <h4 class="">Oil Skimmer</h4>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom w3-center gallery zoom">
+      <a href="Safety.html"> <img src="static/img/safet3.jpg" alt="John" style="width:70%"></a>
+      <h4 class="">Industrial Safety Products</h4>
+    </div>
+
+	<div class="w3-col l3 m6 w3-margin-bottom w3-center gallery zoom">
+     <a href="Safety.html"> <img src="static/img/safety6.jpg" alt="John" style="width:70%"></a>
+      <h4 class="">Electrical Safety instruments</h4>
+    </div>
+	</div>
+
+
+</div>
+</div></div>
+
+
+
+<div class="panel-footer" style="color:white;background-color:#004d4d;">
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2 footer" style="border-right:none">
+				<u>Quick Links:</u><br>
+				<a href="/index" class="flinks" style="color:white">Home</a><br>
+				<a href="CONTACTUS.html" class="flinks" style="color:white">Contact Us</a><br>
+				<a href="aboutus.html" class="flinks" style="color:white">About Us</a>
+			</div>
+			<div class="col-sm-5 footer" style=""><u>Address:</u><br>
+			<p>SPRAJO UNITECH <br>
+			Gandharva Excellence &nbsp&nbsp&nbsp&nbsp&nbsp <br>
+			Moshi,Pune-412105
+	        </p>
+			</div>
+			<div class="col-sm-5 footer" style="">
+			<a href="CONTACTUS.html" style="color:white;"></u>Contact Us:</u><br></a>
+			sales@sprajounitech.com &nbsp&nbsp&nbsp&nbsp&nbsp <br>
+			Call Us:8888819296 &nbsp&nbsp<br>
+			Monday-Saturday, 9:00am-6:00pm
+			</div>
+
+		</div>
+	</div>
+	</div>
+
+	</div>
+
+</body>
+</html>
